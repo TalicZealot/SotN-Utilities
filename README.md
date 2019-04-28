@@ -1,15 +1,15 @@
 # Castlevania: Symphony of the Night Utilities
 Various tools for speedrunning, romhacking, TASing and research for Castlevania: Symphony of the Night(PSX)
 
-#H itbox Display
-*weapon hitboxes
-*player hurtbox / collision box
-*projectile hitboxes
-*world object boxes
+# Hitbox Display
+* weapon hitboxes
+* player hurtbox / collision box
+* projectile hitboxes
+* world object boxes
 
 # Ram Watch file
-*minimap relic room locations
-*various other game values
+* minimap relic room locations
+* various other game values
 
 # Useful Links
 * https://www.speedrun.com/sotn
