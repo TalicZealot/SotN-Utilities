@@ -41,13 +41,19 @@ local function enemyData()
             end
             x = mainmemory.read_u16_le(base + 2) -- overflows
             y = mainmemory.read_u16_le(base + 6)
+            speedHorFract = mainmemory.readbyte(base + 0x9)
+            speedHorWhole = mainmemory.readbyte(base + 0xA)
+            speedVertFract = mainmemory.readbyte(base + 0xD)
+            speedVertWhole = mainmemory.readbyte(base + 0xE)
             xoff = mainmemory.read_u16_le(base + 0x10)
             yoff = mainmemory.read_u16_le(base + 0x12)
             facing = mainmemory.readbyte(base + 0x14)
             palette = mainmemory.readbyte(base + 0x16)
             colorMode = mainmemory.readbyte(base + 0x18) --transparency
             sprite = mainmemory.read_u16_le(base + 0x28)
+            lockOn = mainmemory.read_u16_le(base + 0x2C)
             itemIndex = mainmemory.readbyte(base + 0x30)
+            crit = mainmemory.readbyte(base + 0x33)
             homing = mainmemory.read_u16_le(base + 0x37)
             --38
             --39
@@ -57,6 +63,7 @@ local function enemyData()
             hp = mainmemory.read_u16_le(base + 0x3E)
             dmg = mainmemory.read_u16_le(base + 0x40)
             type = mainmemory.read_u16_le(base + 0x43)
+            invincibility = mainmemory.read_u16_le(base + 0x49)
             spriteSheet = mainmemory.read_u16_le(base + 0x54)
             spriteAnimationFrame = mainmemory.read_u16_le(base + 0x56)
             spriteIndex = mainmemory.read_u16_le(base + 0x5A)
@@ -69,10 +76,15 @@ local function enemyData()
             "\r" .. 'hp: ' .. hp .. ' address: ' .. string.format("%x", (base + 0x3E)) .. 
             "\r" .. 'xpos: ' .. x .. ' address: ' .. string.format("%x", (base + 0x2)) .. 
             "\r" .. 'ypos: ' .. y .. ' address: ' .. string.format("%x", (base + 0x6)) .. 
+            "\r" .. 'speedHorFract: ' .. speedHorFract .. ' address: ' .. string.format("%x", (base + 0x9)) .. 
+            "\r" .. 'speedHorWhole: ' .. speedHorWhole .. ' address: ' .. string.format("%x", (base + 0xA)) .. 
+            "\r" .. 'speedVertFract: ' .. speedVertFract .. ' address: ' .. string.format("%x", (base + 0xD)) .. 
+            "\r" .. 'speedVertWhole: ' .. speedVertWhole .. ' address: ' .. string.format("%x", (base + 0xE)) .. 
+            "\r" .. 'dmg: ' .. dmg .. ' address: ' .. string.format("%x", (base + 0x40)) .. 
+            "\r" .. 'type: ' .. type .. ' address: ' .. string.format("%x", (base + 0x43)) ..
             "\r" .. 'xrad: ' .. xrad .. ' address: ' .. string.format("%x", (base + 0x46)) .. 
             "\r" .. 'yrad: ' .. yrad .. ' address: ' .. string.format("%x", (base + 0x47)) .. 
-            "\r" .. 'dmg: ' .. dmg .. ' address: ' .. string.format("%x", (base + 0x40)) .. 
-            "\r" .. 'type: ' .. type .. ' address: ' .. string.format("%x", (base + 0x43)) .. 
+            "\r" .. 'invincibility: ' .. invincibility .. ' address: ' .. string.format("%x", (base + 0x49)) .. 
             "\r" .. 'spriteIndex: ' .. spriteIndex .. ' address: ' .. string.format("%x", (base + 0x5A)) .. 
             "\r" .. 'spriteSheet: ' .. spriteSheet .. ' address: ' .. string.format("%x", (base + 0x54)) .. 
             "\r" .. 'sprite: ' .. sprite .. ' address: ' .. string.format("%x", (base + 0x28)) .. 

@@ -1,4 +1,5 @@
 SystemID PSX
+0	S	_	1		Stats
 097BA0	d	u	0	MainRAM	CurrentHp
 097BA4	d	u	0	MainRAM	MaxHp
 097BB0	d	u	0	MainRAM	CurrentMp
@@ -18,6 +19,7 @@ SystemID PSX
 097BE8	d	u	0	MainRAM	Level
 097BEC	d	u	0	MainRAM	Experience
 03C760	d	u	0	MainRAM	Rooms
+0	S	_	1		Relics
 097964	b	u	0	MainRAM	SoulOfBat
 097965	b	u	0	MainRAM	FireOfBat
 097966	b	u	0	MainRAM	EchoOfBat
@@ -31,7 +33,7 @@ SystemID PSX
 09796E	b	u	0	MainRAM	CubeOfZoe
 09796F	b	u	0	MainRAM	SpiritOrb
 097970	b	u	0	MainRAM	GravityBoots
-097971	w	u	0	MainRAM	LeapStone
+097971	b	u	0	MainRAM	LeapStone
 097972	b	u	0	MainRAM	HolySymbol
 097973	b	u	0	MainRAM	FaerieScroll
 097974	b	u	0	MainRAM	JewelOfOpen
@@ -48,6 +50,7 @@ SystemID PSX
 09797F	b	u	0	MainRAM	RibOfVlad
 097980	b	u	0	MainRAM	RingOfVlad
 097981	b	u	0	MainRAM	EyeOfVlad
+0	S	_	1		Familiar XP
 097C48	d	u	0	MainRAM	BatCardXp
 097C54	d	u	0	MainRAM	GhostCardXp
 097C60	d	u	0	MainRAM	FaerieCardXp
@@ -55,6 +58,7 @@ SystemID PSX
 097C78	d	u	0	MainRAM	SwordCardXp
 097C84	d	u	0	MainRAM	SpriteCardXp
 097C90	d	u	0	MainRAM	NoseDevilCardXp
+0	S	_	1		Shortcuts
 03BEBC	b	u	0	MainRAM	WarpsFirstCastle
 03BEBD	b	u	0	MainRAM	WarpsSecondCastle
 03BDFC	b	u	0	MainRAM	OuterWallElevator
@@ -72,6 +76,7 @@ SystemID PSX
 03BE3C	b	u	0	MainRAM	FirstDemonButton
 03BE44	b	u	0	MainRAM	SecondDemonButton
 03BE80	b	u	0	MainRAM	KeepStairs
+0	S	_	1		Inventory
 097C00	b	u	0	MainRAM	RightHandSlot
 097C04	b	u	0	MainRAM	LeftHandSlot
 097C08	b	u	0	MainRAM	HelmSlot
@@ -80,6 +85,7 @@ SystemID PSX
 097C14	b	u	0	MainRAM	AccessorySlot1
 097C18	b	u	0	MainRAM	AccessorySlot2
 097BFC	b	u	0	MainRAM	Subweapon
+0	S	_	1		Character Entity
 073404	b	u	0	MainRAM	State
 073406	b	u	0	MainRAM	Action
 0733EC	b	u	0	MainRAM	Facing
@@ -110,8 +116,8 @@ SystemID PSX
 074B7E	b	u	0	MainRAM	Activator
 072F76	b	u	0	MainRAM	HealTrigger
 072F78	b	u	0	MainRAM	HealAmount
-000000	b	u	0	MainRAM	-------SPEEDS
-0733E1	b	u	0	MainRAM	CurrentHorizontalSpeedWhole
+0	S	_	1		Speeds
+0733E2	b	s	0	MainRAM	CurrentHorizontalSpeedWhole
 0733E1	b	u	0	MainRAM	CurrentHorizontalSpeedFractional
 116BA0	b	u	0	MainRAM	WingsmashHorizontal
 112B7C	b	u	0	MainRAM	WalkingWhole

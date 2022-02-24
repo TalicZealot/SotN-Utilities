@@ -21,7 +21,7 @@ SystemID PSX
 1A78D4	b	u	0	MainRAM	PresetStart
 06BBDC	b	u	0	MainRAM	MapStart
 06C30B	b	u	0	MainRAM	MapEnd
-000000	d	u	0	MainRAM	-------Can Fight
+0	S	_	1		CanFight
 03CA74	b	u	0	MainRAM	Akmodan
 03CA48	b	u	0	MainRAM	Beelzebub
 03CA5C	b	u	0	MainRAM	Cerberus
@@ -42,7 +42,7 @@ SystemID PSX
 03CA40	b	u	0	MainRAM	Slogra&Gaibon
 03CA4C	b	u	0	MainRAM	Succubus
 03CA68	b	u	0	MainRAM	Creature
-000000	d	u	0	MainRAM	---------Inventory Menu
+0	S	_	1		Inventory
 03C9B0	b	u	0	MainRAM	Category
 09798A	b	u	0	MainRAM	HandQuantityStart
 097A8D	b	u	0	MainRAM	HandInventoryStart
@@ -58,4 +58,9 @@ SystemID PSX
 03C9C4	b	u	0	MainRAM	AccessoryCursor
 08AE80	d	u	0	GPURAM	VramMapStart
 138458	b	h	0	MainRAM	Music
+0	S	_	1		In Game Time
+097C30	b	u	0	MainRAM	Hours
+097C34	b	u	0	MainRAM	Minutes
+097C38	b	u	0	MainRAM	Seconds
+097C3C	b	u	0	MainRAM	Frames
 
