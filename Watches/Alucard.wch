@@ -91,6 +91,8 @@ SystemID PSX
 0733EC	b	u	0	MainRAM	Facing
 072F9C	b	u	0	MainRAM	ScreenX
 072F9E	b	u	0	MainRAM	ScreenY
+0733E2	w	s	0	MainRAM	Horizontal Velocity Whole
+0733E1	b	u	0	MainRAM	Horizontal Velocity Fract
 0730B0	b	u	0	MainRAM	MapX
 0973F1	b	u	0	MainRAM	MapXOffset
 0730B4	b	u	0	MainRAM	MapY

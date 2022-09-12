@@ -63,4 +63,7 @@ SystemID PSX
 097C34	b	u	0	MainRAM	Minutes
 097C38	b	u	0	MainRAM	Seconds
 097C3C	b	u	0	MainRAM	Frames
+0	S	_	1		Hitboxes
+0BD1C0	w	u	0	MainRAM	enable both to draw
+1362B0	w	u	0	MainRAM	enable both to draw
 
