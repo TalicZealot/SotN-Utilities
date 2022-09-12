@@ -9,6 +9,7 @@ Various tools for speedrunning, romhacking, TASing and research for Castlevania:
 * SotN Decomp: https://github.com/Xeeynamo/sotn-decomp
 * SotN Editor and Entity Recompiler: https://github.com/KernelEquinox/SNEER
 * SotN Bizhawk Api: https://github.com/TalicZealot/SotnApi
+* SotN Prologue Bypass Script: https://github.com/Nijoja/Sotn-Projects
 
 ## Tools
 * SotN Drop Rate Calculator: https://fatalis.pw/sotn/dropcalc/

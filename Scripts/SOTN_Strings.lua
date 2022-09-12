@@ -1,11 +1,11 @@
 ------------------------------------------------------
--- Castlevania: Symphony of the Night Enemy Data Dump--
+-- Castlevania: Symphony of the Night Strings Dump--
 ------------------------------------------------------
 
 local done = 0
 
 ------------------------
-local function enemyData()
+local function strings()
     local address = 0x0E05D8
     local endAdd = 0x0E0D36
     local output = ""
@@ -45,7 +45,7 @@ end
 
 while true do
     if done < 1 then
-        enemyData()
+        strings()
     end
     emu.frameadvance()
 end
