@@ -8,6 +8,7 @@ Various tools for speedrunning, romhacking, TASing and research for Castlevania:
 * SotN Randomizer: https://github.com/3snowp7im/SotN-Randomizer
 * SotN Decomp: https://github.com/Xeeynamo/sotn-decomp
 * SotN Editor and Entity Recompiler: https://github.com/KernelEquinox/SNEER
+* SotN Documentation: https://sotn.dev/
 * SotN Bizhawk Api: https://github.com/TalicZealot/SotnApi
 * SotN Prologue Bypass Script: https://github.com/Nijoja/Sotn-Projects
 
