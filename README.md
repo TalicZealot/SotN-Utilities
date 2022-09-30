@@ -11,6 +11,7 @@ Various tools for speedrunning, romhacking, TASing and research for Castlevania:
 * SotN Documentation: https://sotn.dev/
 * SotN Bizhawk Api: https://github.com/TalicZealot/SotnApi
 * SotN Prologue Bypass Script: https://github.com/Nijoja/Sotn-Projects
+* SotN Kind and Fair: https://github.com/Lakifume/SotnKindAndFair
 
 ## Tools
 * SotN Drop Rate Calculator: https://fatalis.pw/sotn/dropcalc/
