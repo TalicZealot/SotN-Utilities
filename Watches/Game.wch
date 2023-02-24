@@ -66,4 +66,6 @@ SystemID PSX
 0	S	_	1		Hitboxes
 0BD1C0	w	u	0	MainRAM	enable both to draw
 1362B0	w	u	0	MainRAM	enable both to draw
+0	S	_	1		Transitions
+0A2460	b	h	0	MainRAM	area transitions start
 

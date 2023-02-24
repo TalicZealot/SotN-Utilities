@@ -121,6 +121,7 @@ SystemID PSX
 0	S	_	1		Speeds
 0733E2	b	s	0	MainRAM	CurrentHorizontalSpeedWhole
 0733E1	b	u	0	MainRAM	CurrentHorizontalSpeedFractional
+0733E6	w	s	0	MainRAM	CurrentVerticalSpeedWhole
 116BA0	b	u	0	MainRAM	WingsmashHorizontal
 112B7C	b	u	0	MainRAM	WalkingWhole
 112B85	b	u	0	MainRAM	WalkingFract
