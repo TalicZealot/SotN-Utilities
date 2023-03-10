@@ -55,8 +55,8 @@ local function CanWarp()
     return ((canWarp & 0x0E) == 0x0E)
 end
 local function IsInvincible()
-    return memory.read_u32_le(gameAddresses.Invincibility) > 0 
-    or memory.readbyte(gameAddresses.PotionInvincibility) > 0 
+    return memory.read_u16_le(gameAddresses.Invincibility) > 0 
+    or memory.readbyte(gameAddresses.PotionInvincibility) > 4 
     or memory.readbyte(gameAddresses.KnockbackInvincibility) > 0
     or memory.readbyte(gameAddresses.FreezeInvincibility) > 0
 end
