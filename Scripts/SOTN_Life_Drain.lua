@@ -44,10 +44,13 @@ local function MapOpen()
     return memory.readbyte(gameAddresses.MaoOpen) > 0
 end
 local function HasHitbox()
-    if memory.read_u16_le(gameAddresses.AlucardStep) == 7 then
+    if memory.read_u16_le(gameAddresses.AlucardStep) == 7 then -- Power of Mist
         return true
     end
     return memory.readbyte(gameAddresses.EntityHitboxWidth) > 0
+end
+local function IsDying()
+    return memory.read_u16_le(gameAddresses.AlucardStep) == 0x10
 end
 local function CanSave()
     local canSave = memory.readbyte(gameAddresses.CanSave)
@@ -68,13 +71,15 @@ local function PrologueCompleted()
 end
 local function DrainViable()
     return InGame() == true
+    and IsDying() == false
     and IsLoading() == false
     and InScreenTransition() == false
     and MenuOpen() == false
     and MapOpen() == false
     and HasHitbox() == true
     and CanSave() == false
-    and IsInvincible() == false
+    -- and canWarp() == false
+    --and IsInvincible() == false
 end
 local function getMaxHp()
     return memory.read_u32_le(gameAddresses.MaxHp)
