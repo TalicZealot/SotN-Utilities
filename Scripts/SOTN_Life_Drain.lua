@@ -44,6 +44,9 @@ local function MapOpen()
     return memory.readbyte(gameAddresses.MaoOpen) > 0
 end
 local function HasHitbox()
+    if memory.read_u16_le(gameAddresses.AlucardStep) == 7 then
+        return true
+    end
     return memory.readbyte(gameAddresses.EntityHitboxWidth) > 0
 end
 local function CanSave()
@@ -55,7 +58,7 @@ local function CanWarp()
     return ((canWarp & 0x0E) == 0x0E)
 end
 local function IsInvincible()
-    return memory.read_u16_le(gameAddresses.Invincibility) > 0 
+    return memory.read_u16_le(gameAddresses.Invincibility) > 0
     or memory.readbyte(gameAddresses.PotionInvincibility) > 4 
     or memory.readbyte(gameAddresses.KnockbackInvincibility) > 0
     or memory.readbyte(gameAddresses.FreezeInvincibility) > 0
@@ -109,7 +112,8 @@ local function drain()
 
     local currentHp = getCurrentHp()
     local newHp = currentHp - reductionWhole
-    if newHp < 0 then
+    if newHp < 1 then
+        setCurrentHp(0)
         killCharacter()
     else
         setCurrentHp(newHp)
