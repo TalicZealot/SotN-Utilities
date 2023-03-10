@@ -48,11 +48,11 @@ local function HasHitbox()
 end
 local function CanSave()
     local canSave = memory.readbyte(gameAddresses.CanSave)
-    return ((canSave & 0x20) == 0x20)
+    return (bit.band(canSave,0x20) == 0x20)
 end
 local function CanWarp()
     local canWarp = memory.readbyte(gameAddresses.CanWarp)
-    return ((canWarp & 0x0E) == 0x0E)
+    return (bit.band(canWarp,0x0E) == 0x0E)
 end
 local function IsInvincible()
     return memory.read_u32_le(gameAddresses.Invincibility) > 0 
