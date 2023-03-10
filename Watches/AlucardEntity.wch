@@ -1,0 +1,23 @@
+SystemID PSX
+0733D8	d	3	0	MainRAM	Screen Xpos
+0733DC	d	3	0	MainRAM	Screen Ypos
+0733E0	d	3	0	MainRAM	Acceleration X
+0733E4	d	3	0	MainRAM	Acceleration Y
+0733E8	d	3	0	MainRAM	unk1
+0733EC	w	u	0	MainRAM	Facing
+0733EE	w	u	0	MainRAM	Palette
+0733F0	b	u	0	MainRAM	Blend Mode
+0733F6	w	u	0	MainRAM	Poly Rotation Angle
+0733F8	w	u	0	MainRAM	Poly Origin X
+0733FA	w	u	0	MainRAM	Poly Origin Y
+0733FC	w	u	0	MainRAM	zPriority
+0733FE	d	s	0	MainRAM	ObjectId
+073404	w	u	0	MainRAM	Step
+073406	w	u	0	MainRAM	Step 2
+07340A	w	u	0	MainRAM	ObjectRoomIndex
+073416	w	s	0	MainRAM	Hit Points
+073418	w	u	0	MainRAM	Damage
+07341A	w	u	0	MainRAM	Damage Type
+07341E	b	u	0	MainRAM	HitboxWidth
+07341F	b	u	0	MainRAM	HitboxHeight
+
