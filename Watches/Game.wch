@@ -68,4 +68,7 @@ SystemID PSX
 1362B0	w	u	0	MainRAM	enable both to draw
 0	S	_	1		Transitions
 0A2460	b	h	0	MainRAM	area transitions start
+0	S	_	1		RNG seeds
+009010	d	u	0	MainRAM	Evil Seed
+0978B8	d	u	0	MainRAM	Nice Seed
 
