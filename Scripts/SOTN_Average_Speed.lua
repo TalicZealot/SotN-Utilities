@@ -1,4 +1,5 @@
-local AlucardHorizontalSpeed = 0x0733E0
+local speed = 0x0733E0
+local invincibility = 0x072F1A
 local frame = 0
 local average = 0
 local totalSpeed = 0
@@ -6,7 +7,7 @@ local started = true
 local startFrame = 0
 
 local function GetSpeed()
-    return (memory.read_s32_le(AlucardHorizontalSpeed) / 65536.0)
+    return (memory.read_s32_le(speed) / 65536.0)
 end
 
 local function check()
@@ -33,6 +34,7 @@ local function check()
 end
 
 while true do
+    memory.writebyte(invincibility, 0xFF)
     frame = frame + 1
     check()
     emu.frameadvance()
