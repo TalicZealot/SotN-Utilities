@@ -16,7 +16,7 @@ Various tools for speedrunning, romhacking, TASing and research for Castlevania:
 * SotN Saturn HUD: https://github.com/arukAdo-tas/hud_nitm_sat
 
 ## Tools
-* SotN Drop Rate Calculator: https://fatalis.pw/sotn/dropcalc/
+* SotN Drop Rate Calculator: https://fatalis.github.io/sotn-dropcalc/
 * SotN Experience Chart: https://docs.google.com/spreadsheets/d/1X4HyErJGmyaTbo9u8ojq8yj3eQ5uTveChx9G1HoOo64/edit#gid=0
 
 ## Various
